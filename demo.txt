@@ -1,1 +1,376 @@
 sdfhkkgvhqi dcjqsdnbn[cn szxl[b ds
+psssa@Pratham MINGW64 ~ (master)
+$ git config --global user.name "pratham"
+
+psssa@Pratham MINGW64 ~ (master)
+$ git config --global user.email "pss.salunkhe281274@gmail.com"
+
+psssa@Pratham MINGW64 ~ (master)
+$ cd "E:\\AWT_MCA_2025-main\\test"
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test
+$ ls
+abc.txt
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test
+$ git init
+Initialized empty Git repository in E:/AWT_MCA_2025-main/test/.git/
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        abc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git add .
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   abc.txt
+
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git commit -m "okk"
+[master (root-commit) f964cd8] okk
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 abc.txt
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git remote add origin https://github.com/Volt230/demo-push.git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ ^C
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 208 bytes | 208.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Volt230/demo-push/pull/new/master
+remote:
+To https://github.com/Volt230/demo-push.git
+ * [new branch]      master -> master
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git pull origin master
+From https://github.com/Volt230/demo-push
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git pull origin master
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 896 bytes | 224.00 KiB/s, done.
+From https://github.com/Volt230/demo-push
+ * branch            master     -> FETCH_HEAD
+   f964cd8..16adc6f  master     -> origin/master
+Updating f964cd8..16adc6f
+Fast-forward
+ abc.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git clone hthttps://github.com/Volt230/demo-push.git
+fatal: repository '' does not exist
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git clone  https://github.com/Volt230/demo-push.git
+fatal: repository '' does not exist
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git checkout main
+git: 'ccheckout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test (master)
+$ cd clone
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git init
+Initialized empty Git repository in E:/AWT_MCA_2025-main/test/clone/.git/
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git clone  https://github.com/Volt230/demo-push.git
+fatal: repository '' does not exist
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout main Copy
+error: pathspec 'main' did not match any file(s) known to git
+error: pathspec 'Copy' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ggit switch main
+fatal: invalid reference: main
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git remote rm origin
+error: No such remote: 'origin'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git init
+Reinitialized existing Git repository in E:/AWT_MCA_2025-main/test/clone/.git/
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git remote rm origin
+error: No such remote: 'origin'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git remote rm origin master
+usage: git remote remove <name>
+
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git remote add origin https://github.com/Volt230/demo-push.git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git clone  https://github.com/Volt230/demo-push.git
+fatal: repository '' does not exist
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git clone https://github.com/Volt230/demo-push.git
+Cloning into 'demo-push'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 12 (delta 0), reused 8 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (12/12), done.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ vim demo.txt
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ cat demo.txt
+I am changing content
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git commit "changes"
+error: pathspec 'changes' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git commit -m "changes"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo-push/
+        demo.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git add .
+warning: adding embedded git repository: demo-push
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> demo-push
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached demo-push
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config advice.addEmbeddedRepo false"
+warning: in the working copy of 'demo.txt', LF will be replaced by CRLF the next time Git touches it
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git commit -m "changes"
+[master (root-commit) 0c1d2c6] changes
+ 2 files changed, 2 insertions(+)
+ create mode 160000 demo-push
+ create mode 100644 demo.txt
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git push origin master
+To https://github.com/Volt230/demo-push.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout master
+Already on 'master'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git clone https://github.com/Volt230/demo-push.git
+fatal: destination path 'demo-push' already exists and is not an empty directory.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git push origin master
+To https://github.com/Volt230/demo-push.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git branch main
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (master)
+$ git checkout main
+Switched to branch 'main'
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git push origin main
+To https://github.com/Volt230/demo-push.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git add .
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git commit -m "change"
+On branch main
+nothing to commit, working tree clean
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git add demo.txt
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git commit -m "change"
+On branch main
+nothing to commit, working tree clean
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git commit -m "changing"
+On branch main
+nothing to commit, working tree clean
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$ git push origin main
+To https://github.com/Volt230/demo-push.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Volt230/demo-push.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+psssa@Pratham MINGW64 /e/AWT_MCA_2025-main/test/clone (main)
+$
